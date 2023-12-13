@@ -23,7 +23,7 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6920803794:AAHlsryRx1vNQe7FgdlbbnhxO6o5aFKr430",
+             bot_token= "6916806513:AAFyVDof8oovxMh8vEV-jk0aBi06U6KtUHs",
              api_id= 20463500,
              api_hash= "5db9bc6439f7b43daa75689edf65b431"
 )
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["pip"]))
+@bot.on_message(filters.command(["hinata"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Now Send Me Your **txt** File & Follow Bot Instructions**")
     input: Message = await bot.listen(editable.chat.id)
